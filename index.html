@@ -1,0 +1,77 @@
+
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Revision-io Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f6fb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            background: white;
+            padding: 30px;
+            width: 300px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #5b5af7;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-box">
+    <h2>Revision-io</h2>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+</div>
+
+<script>
+    function login() {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        if (username === "" || password === "") {
+            alert("Please enter username and password");
+        } else {
+        
+            window.location.href = "index1.html";
+        }
+    }
+</script>
+
+</body>
+</html>
