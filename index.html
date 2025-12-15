@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision-io | Smart Study Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Revision-io</h1>
+            <p>Master your subjects with spaced repetition.</p>
+        </header>
+
+        <section class="input-card">
+            <h2>Add New Lecture</h2>
+            <form id="lecture-form">
+                <input type="text" id="subject" placeholder="Subject Name" required>
+                <input type="text" id="topic" placeholder="Topic" required>
+                <div class="date-input">
+                    <label for="date">Lecture Date:</label>
+                    <input type="date" id="date" required>
+                </div>
+                <button type="submit" id="add-btn">Add to Schedule</button>
+            </form>
+        </section>
+
+        <section class="stats-container">
+            <div class="stat-box">
+                <span id="pending-count">0</span>
+                <label>Pending Revisions</label>
+            </div>
+            <div class="stat-box">
+                <span id="completion-rate">0%</span>
+                <label>Completion Rate</label>
+            </div>
+        </section>
+
+        <section class="list-section">
+            <h2>Due for Revision</h2>
+            <div id="pending-list" class="list">
+                
+            </div>
+        </section>
+
+        <section class="list-section">
+            <h2>Revision History</h2>
+            <div id="completed-list" class="list">
+                
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+    <button id="clear-btn" style="background-color: #e74c3c; margin-top: 20px;">
+    Clear All Data
+</button>
+</body>
+</html>
